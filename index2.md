@@ -21,6 +21,9 @@ Checkout my current Projects blog pages. Don't forget to follow me on twitter: @
 
 ### Stack Overflow stats
 	some stats
-	
-	
-[![My Family](/assets/img/family.jpg)](/family/)
+
+<ul class="posts">
+  {% for post in site.posts %}
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+  {% endfor %}
+</ul>
