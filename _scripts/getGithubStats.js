@@ -65,10 +65,20 @@ function renderStatsText(stats) {
 	// console.log(stats);
 	var str = ['<ul>',
 			'<li>Total Repos: '+stats.totalRepos+'</li>',
-			'<li>Last Public Commit: '+stats.latestCommit+'</li>',
+			'<li>Last Public Commit: '+stats.lastCommit+'</li>',
 			'<li>Most Starred Repo: '+stats.mostStarred+'</li>',
 		'</ul>'].join('');
 	console.log(str);
+
+	var fs = require('fs');
+	fs.writeFile("../_includes/githubStats", str, function(err) {
+		if(err) {
+			console.log(err);
+		} else {
+			console.log("The file was saved!");
+		}
+	});
+
 }
 
 
