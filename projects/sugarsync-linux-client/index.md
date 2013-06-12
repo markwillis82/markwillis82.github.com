@@ -7,11 +7,11 @@ group: navigation
 {% include JB/setup %}
 
 #Discontinued
-	Unfortunately I am no longer contributing to this project. There were a couple of issues with Sugar syncs API that meant I was not able to reduce the amount of work the client had to do (it would sit at 100% constantly). The problem was I had to traverse the whole local folder structure to check for any changes and also (at the same time) check the whole remote folder strucutre for changes.
+> Unfortunately I am no longer contributing to this project. There were a couple of issues with Sugar syncs API that meant I was not able to reduce the amount of work the client had to do (it would sit at 100% constantly). The problem was I had to traverse the whole local folder structure to check for any changes and also (at the same time) check the whole remote folder strucutre for changes.
 
-	What I had request was a "timeline" of changes from the API - so after giving a timestamp I could get a list of changes. Unfortunately this did not happen.
+> What I had request was a "timeline" of changes from the API - so after giving a timestamp I could get a list of changes. Unfortunately this did not happen.
 
-	Thanks for you help and time though guys.
+> Thanks for you help and time though guys.
 
 
 
